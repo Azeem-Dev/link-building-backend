@@ -75,7 +75,7 @@ namespace link_building
                             Type = SecuritySchemeType.ApiKey,
                             Scheme = "Bearer",
                             BearerFormat = "JWT",
-                            In = ParameterLocation.Header,
+                            In = ParameterLocation.Header, 
                             Description = "JWT Authorization header using the Bearer scheme."
                         });
 
@@ -104,7 +104,7 @@ namespace link_building
                     builder => builder
                         .WithOrigins(
                             // App:CorsOrigins in appsettings.json can contain more than one address separated by comma.
-                            "http://localhost:4200,http://localhost:8080,http://localhost:8081,http://localhost:3000"
+                            "http://localhost:4200,http://localhost:8080,http://localhost:8081,http://localhost:3000,https://link-builder-seo-3a0d0.web.app,https://link-builder-seo-3a0d0.firebaseapp.com"
                                 .Split(",", StringSplitOptions.RemoveEmptyEntries)
                                 .ToArray()
                         )
