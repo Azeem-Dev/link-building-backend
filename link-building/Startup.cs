@@ -67,7 +67,7 @@ namespace link_building
             services.AddSwaggerGen
                 (
                     c => {
-                        c.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "GroceryStore", Version = "v1" });
+                        c.SwaggerDoc(name: "v1", new OpenApiInfo { Title = "Link-Building", Version = "v1" });
 
                         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                         {
